@@ -136,9 +136,9 @@ I saved both files. Next, I opened VS Code terminal and ran:
 
 ## How I Checked The Output
 I opened the **allow_list.txt** file. I got the following result:
-<br>`192.168.1.10<br>
-192.168.1.20
-192.168.1.30`
+<br>`192.168.1.10
+<br>192.168.1.20
+<br>192.168.1.30`
 
 The IP addresses remaining are now three instead of the initial five. The two IP addresses in the **remove list** have gone.
 

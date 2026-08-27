@@ -9,7 +9,7 @@ I documented it here as part of my Python learning journey.
 
 The organization uses an **allow list** containing IP addresses that are permitted to access restricted content. A separate **remove list** identifies IP addresses that should no longer have access.
 
-The Python algorithm *reads* the allow list, **removes the specified IP addresses, and *updates* the original file with the revised list.
+The Python algorithm *reads* the allow list, *removes the specified IP addresses*, and *updates* the original file with the revised list.
 
 ## Objective
 The objective of this project is to *automate the process of removing unauthorized or no-longer-approved IP addresses from an allow list.*

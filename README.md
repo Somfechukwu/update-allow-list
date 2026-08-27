@@ -1,7 +1,9 @@
 # Update a File Through a Python Algorithm
 
 ## Project Overview
-This project demonstrates how Python can be used to automate an access-control task.
+This project demonstrates how Python can be used to automate an access-control task. It is one of the portfolio projects in the Google Cybersecurity course (Automate Cybersecurity Tasks With Python).
+
+I documented it here as part of my Python learning journey.
 
 The organization uses an allow list containing IP addresses that are permitted to access restricted content. A separate remove list identifies IP addresses that should no longer have access.
 

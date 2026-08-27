@@ -1,16 +1,18 @@
 # Update a File Through a Python Algorithm
 
 ## Project Overview
-This project demonstrates how Python can be used to automate an access-control task. It is one of the portfolio projects in the Google Cybersecurity course (Automate Cybersecurity Tasks With Python).
+This project demonstrates how Python can be used to automate an access-control task. 
 
-I documented it here as part of my Python learning journey.
+It is one of the portfolio projects in the Google Cybersecurity course (Automate Cybersecurity Tasks With Python).
 
-The organization uses an allow list containing IP addresses that are permitted to access restricted content. A separate remove list identifies IP addresses that should no longer have access.
+I documented it here as part of my Python learning journey. 
 
-The Python algorithm reads the allow list, removes the specified IP addresses, and updates the original file with the revised list.
+The organization uses an **allow list** containing IP addresses that are permitted to access restricted content. A separate **remove list** identifies IP addresses that should no longer have access.
+
+The Python algorithm *reads* the allow list, **removes the specified IP addresses, and *updates* the original file with the revised list.
 
 ## Objective
-The objective of this project is to automate the process of removing unauthorized or no-longer-approved IP addresses from an allow list.
+The objective of this project is to *automate the process of removing unauthorized or no-longer-approved IP addresses from an allow list.*
 
 ## How It Works
 1. Opens the allow list file.

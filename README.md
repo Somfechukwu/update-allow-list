@@ -136,7 +136,7 @@ I saved both files. Next, I opened VS Code terminal and ran:
 
 ## How I Checked The Output
 I opened the **allow_list.txt** file. I got the following result:
-`192.168.1.10
+<br>`192.168.1.10<br>
 192.168.1.20
 192.168.1.30`
 

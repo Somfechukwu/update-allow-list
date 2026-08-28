@@ -120,29 +120,28 @@ The `.join()` method combines the elements in a list into a single string separa
 
 The `"w"` write mode overwrites `allow_list.txt` with the cleaned string using `.write()`.
 
--
 
 ## Complete Python Script
 
-# Define the target file
+### Define the target file
 `import_file = "allow_list.txt"`
 
-# 1. Read allow list contents
+### 1. Read allow list contents
 ```text
 `with open(import_file, "r") as file:`
     `ip_addresses = file.read()`
 ```
-# 2. Convert raw string into a list of IPs
+### 2. Convert raw string into a list of IPs
 `ip_addresses = ip_addresses.split()`
 
-# 3. Define revoked IPs and remove them
+### 3. Define revoked IPs and remove them
 ```text
 `remove_list = ["192.168.1.15", "192.168.1.25"]`
 `for element in remove_list:`
     `if element in ip_addresses:`
         `ip_addresses.remove(element)`
 ```
-# 4. Convert list back to formatted string and overwrite file
+### 4. Convert list back to formatted string and overwrite file
 ```text
 `ip_addresses = "\n".join(ip_addresses)`
 `with open(import_file, "w") as file:`
@@ -151,13 +150,13 @@ The `"w"` write mode overwrites `allow_list.txt` with the cleaned string using `
 
 ---
 
-### Testing & Output Verification
+## Testing & Output Verification
 
-## Execution
+### Execution
 Run the script from the VS Code Terminal:
 `python update_allow_list.py`
 
-## Output (`allow_list.txt`)
+### Output (`allow_list.txt`)
 ```text
 192.168.1.10
 192.168.1.20
@@ -165,7 +164,7 @@ Run the script from the VS Code Terminal:
 ```
 **Result:** The two target IP addresses (`192.168.1.15` and `192.168.1.25`) were successfully removed, leaving only the three authorized addresses intact.
 
-### Key Takeaways
+## Key Takeaways
 In this project, I was able to do the following:
 - **Security Automation:** I demonstrated how scripting enforces the Principle of Least Privilege through rapid, repeatable access list maintenance.
 - **Safe File Handling:** Used with `open()` to ensure the file closes automatically and safely after reading or writing.

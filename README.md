@@ -120,6 +120,7 @@ The `.join()` method combines the elements in a list into a single string separa
 
 The `"w"` write mode overwrites `allow_list.txt` with the cleaned string using `.write()`.
 
+---
 
 ## Complete Python Script
 
@@ -171,3 +172,6 @@ In this project, I was able to do the following:
 - **Data Parsing & Formatting:** I used `.split()` to turn the text into a list for easy editing, and `"\n".join()` to put it back into clean lines before saving.
 - **Error Prevention:** I added an `if` check (`if element in ...`) to make sure an IP address exists before trying to remove it, preventing program crashes.
 - **Efficient Code:** I kept file reading and writing to single steps at the start and end, avoiding unnecessary file operations inside the loop.
+
+---
+

@@ -55,8 +55,8 @@ In enterprise environments, similar automation logic applies to:
 ---
 
 ## Project Files
-- `update_allow_list.py` — The Python script that updates the access list.
-- `allow_list.txt` — The text file containing authorized IP addresses.
+- `update_allow_list.py`: This is the Python script that updates the access list.
+- `allow_list.txt`: This is the text file containing authorized IP addresses.
 
 ---
 
@@ -153,4 +153,4 @@ In this project, I was able to do the following:
 - **Safe File Handling:** Used with `open()` to ensure the file closes automatically and safely after reading or writing.
 - **Data Parsing & Formatting:** I used `.split()` to turn the text into a list for easy editing, and `"\n".join()` to put it back into clean lines before saving.
 - **Error Prevention:** I added an `if` check (`if element in ...`) to make sure an IP address exists before trying to remove it, preventing program crashes.
-**Efficient Code:** I kept file reading and writing to single steps at the start and end, avoiding unnecessary file operations inside the loop.
+- **Efficient Code:** I kept file reading and writing to single steps at the start and end, avoiding unnecessary file operations inside the loop.

@@ -60,7 +60,8 @@ Created `allow_list.txt` containing the initial authorized IP addresses:
 I created a python file called `update_allow_list.py` which would contain the algorithm.
 
 ### Step 3: Identify the File
-`import_file = "allow_list.txt"`  
+`import_file = "allow_list.txt"`
+
 I assigned the target file name to the `import_file` variable for easy reuse.
 
 ### Step 4: Open and Read the File

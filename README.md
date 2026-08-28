@@ -80,8 +80,8 @@ Assigned the target file name to the `import_file` variable for easy reuse.
 
 ### Step 4: Open and Read the File
 ```text
-`with open(import_file, "r") as file:`
-    `ip_addresses = file.read()`
+with open(import_file, "r") as file:
+    ip_addresses = file.read()
 ```
 The `open()` function with `"r"` mode opens the file for reading. The `with` statement acts as a context manager, automatically closing the file when execution exits the block. The `.read()` method imports the file contents as a single string.
 

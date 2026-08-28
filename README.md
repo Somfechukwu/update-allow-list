@@ -1,7 +1,9 @@
 # Update a File Through a Python Algorithm
 
+---
+
 ## Project Overview
-This project demonstrates how Python can be used to automate an access-control task. It is part of the **Google Cybersecurity Certificate** (*Automate Cybersecurity Tasks with Python*).
+This project demonstrates how Python can be used to automate an access-control task. It is one of the portfolio projects that I did in the **Google Cybersecurity Certificate Certification Course** (*Automate Cybersecurity Tasks with Python*).
 
 The organization uses an **allow list** containing IP addresses permitted to access restricted content. A separate **remove list** identifies IP addresses that should no longer have access.
 
@@ -10,7 +12,7 @@ The Python algorithm reads the allow list, removes specified IP addresses, and u
 ---
 
 ## Objective
-Automate the process of removing unauthorized or revoked IP addresses from an access-control allow list using Python file handling and string manipulation.
+The aim of the project is to automate the process of removing unauthorized or revoked IP addresses from an access-control allow list using Python file handling and string manipulation.
 
 ---
 
@@ -128,24 +130,24 @@ The `"w"` write mode overwrites `allow_list.txt` with the cleaned string using `
 
 ### 1. Read allow list contents
 ```text
-`with open(import_file, "r") as file:`
-    `ip_addresses = file.read()`
+with open(import_file, "r") as file:`
+    `ip_addresses = file.read()
 ```
 ### 2. Convert raw string into a list of IPs
 `ip_addresses = ip_addresses.split()`
 
 ### 3. Define revoked IPs and remove them
 ```text
-`remove_list = ["192.168.1.15", "192.168.1.25"]`
-`for element in remove_list:`
-    `if element in ip_addresses:`
-        `ip_addresses.remove(element)`
+remove_list = ["192.168.1.15", "192.168.1.25"]
+for element in remove_list:
+    if element in ip_addresses:
+        ip_addresses.remove(element)
 ```
 ### 4. Convert list back to formatted string and overwrite file
 ```text
-`ip_addresses = "\n".join(ip_addresses)`
-`with open(import_file, "w") as file:`
-    `file.write(ip_addresses)`
+ip_addresses = "\n".join(ip_addresses)
+with open(import_file, "w") as file:
+    file.write(ip_addresses)
 ```
 
 ---

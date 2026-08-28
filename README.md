@@ -61,7 +61,6 @@ In enterprise environments, similar automation logic applies to:
 ---
 
 ## Implementation Steps
-
 ### Step 1: Create the Allow List
 Created `allow_list.txt` containing the initial authorized IP addresses:
 ```text
@@ -164,6 +163,8 @@ Run the script from the VS Code Terminal:
 192.168.1.30
 ```
 **Result:** The two target IP addresses (`192.168.1.15` and `192.168.1.25`) were successfully removed, leaving only the three authorized addresses intact.
+
+---
 
 ## Key Takeaways
 In this project, I was able to do the following:

@@ -93,8 +93,9 @@ The `split()` method splits the string at whitespace (including newlines) to ind
 
 ### Step 6: Define the Remove List
 `remove_list = ["192.168.1.15", "192.168.1.25"]`
-Defines the list of revoked IP addresses that need to be removed from the allow list.
-
+```text
+This code defines the list of revoked IP addresses that need to be removed from the allow list.
+```
 ### Step 7: Iterate and Remove Targeted IPs
 ```text
 `for element in remove_list:

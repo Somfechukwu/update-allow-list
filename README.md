@@ -79,8 +79,10 @@ I created a python file called `update_allow_list.py` which would contain the al
 Assigned the target file name to the `import_file` variable for easy reuse.
 
 ### Step 4: Open and Read the File
+```text
 `with open(import_file, "r") as file:`
     `ip_addresses = file.read()`
+```
 The `open()` function with `"r"` mode opens the file for reading. The `with` statement acts as a context manager, automatically closing the file when execution exits the block. The `.read()` method imports the file contents as a single string.
 
 ### Step 5: Convert the String to a List
@@ -94,9 +96,11 @@ The `split()` method splits the string at whitespace (including newlines) to ind
 Defines the list of revoked IP addresses that need to be removed from the allow list.
 
 ### Step 7: Iterate and Remove Targeted IPs
+```text
 `for element in remove_list:
     if element in ip_addresses:
         ip_addresses.remove(element)`
+```
 - A `for` loop iterates through each address in `remove_list`.
 - The `if element in ip_addresses` check prevents runtime errors (`ValueError`) in case an IP is already absent.
 - The `.remove()` method removes the matching entry from `ip_addresses`.
@@ -106,8 +110,10 @@ Defines the list of revoked IP addresses that need to be removed from the allow 
 The `.join()` method combines the elements in a list into a single string separated by newlines (`\n`), matching the original file structure.
 
 ### Step 9: Write the Updated Data to the File
-`with open(import_file, "w") as file:
-    file.write(ip_addresses)`
+```text
+`with open(import_file, "w") as file:`
+    `file.write(ip_addresses)`
+```
 The `"w"` write mode overwrites `allow_list.txt` with the cleaned string using `.write()`.
 
 ### Complete Python Script
@@ -115,30 +121,32 @@ The `"w"` write mode overwrites `allow_list.txt` with the cleaned string using `
 `import_file = "allow_list.txt"`
 
 # 1. Read allow list contents
+```text
 `with open(import_file, "r") as file:`
     `ip_addresses = file.read()`
-
+```
 # 2. Convert raw string into a list of IPs
 `ip_addresses = ip_addresses.split()`
 
 # 3. Define revoked IPs and remove them
+```text
 `remove_list = ["192.168.1.15", "192.168.1.25"]`
-
 `for element in remove_list:`
     `if element in ip_addresses:`
         `ip_addresses.remove(element)`
-
+```
 # 4. Convert list back to formatted string and overwrite file
+```text
 `ip_addresses = "\n".join(ip_addresses)`
-
 `with open(import_file, "w") as file:`
     `file.write(ip_addresses)`
-
+```
 ### Testing & Output Verification
 ## Execution
 Run the script from the VS Code Terminal:
+```text
 `python update_allow_list.py`
-
+```
 ## Output (`allow_list.txt`)
 ```text
 192.168.1.10

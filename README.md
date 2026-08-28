@@ -79,8 +79,8 @@ I created a python file called `update_allow_list.py` which would contain the al
 Assigned the target file name to the `import_file` variable for easy reuse.
 
 ### Step 4: Open and Read the File
-`with open(import_file, "r") as file:
-    ip_addresses = file.read()`
+`with open(import_file, "r") as file:`
+    `ip_addresses = file.read()`
 The `open()` function with `"r"` mode opens the file for reading. The `with` statement acts as a context manager, automatically closing the file when execution exits the block. The `.read()` method imports the file contents as a single string.
 
 ### Step 5: Convert the String to a List
@@ -129,10 +129,10 @@ for element in remove_list:
         ip_addresses.remove(element)
 
 # 4. Convert list back to formatted string and overwrite file
-`ip_addresses = "\n".join(ip_addresses)
+`ip_addresses = "\n".join(ip_addresses)`
 
-with open(import_file, "w") as file:
-    file.write(ip_addresses)`
+`with open(import_file, "w") as file:`
+    `file.write(ip_addresses)`
 
 ### Testing & Output Verification
 ## Execution

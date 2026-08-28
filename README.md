@@ -70,7 +70,7 @@ Created `allow_list.txt` containing the initial authorized IP addresses:
 192.168.1.20
 192.168.1.25
 192.168.1.30
-
+```
 ### Step 2: Create the Python Script
 I created a python file called `update_allow_list.py` which would contain the algorithm.
 
@@ -144,6 +144,7 @@ Run the script from the VS Code Terminal
 192.168.1.10
 192.168.1.20
 192.168.1.30
+```
 **Result:** The two target IP addresses (`192.168.1.15` and `192.168.1.25`) were successfully removed, leaving only the three authorized addresses intact.
 
 ### Key Takeaways

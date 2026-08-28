@@ -87,7 +87,6 @@ The `open()` function with `"r"` mode opens the file for reading. The `with` sta
 
 ### Step 5: Convert the String to a List
 `ip_addresses = ip_addresses.split()`
-
 ```text
 The `split()` method splits the string at whitespace (including newlines) to individual elements:
 `["192.168.1.10", "192.168.1.15", "192.168.1.20", "192.168.1.25", "192.168.1.30"]`

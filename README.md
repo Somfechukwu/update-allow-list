@@ -121,6 +121,7 @@ The `.join()` method combines the elements in a list into a single string separa
 The `"w"` write mode overwrites `allow_list.txt` with the cleaned string using `.write()`.
 
 ### Complete Python Script
+
 # Define the target file
 `import_file = "allow_list.txt"`
 
@@ -145,7 +146,11 @@ The `"w"` write mode overwrites `allow_list.txt` with the cleaned string using `
 `with open(import_file, "w") as file:`
     `file.write(ip_addresses)`
 ```
+
+---
+
 ### Testing & Output Verification
+
 ## Execution
 Run the script from the VS Code Terminal:
 `python update_allow_list.py`

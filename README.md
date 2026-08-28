@@ -102,7 +102,7 @@ Defines the list of revoked IP addresses that need to be removed from the allow 
 - The `.remove()` method removes the matching entry from `ip_addresses`.
 
 ### Step 8: Convert the List back into a String
-`ip_addresses = "\n".join(ip_addresses)
+`ip_addresses = "\n".join(ip_addresses)`
 The `.join()` method combines the elements in a list into a single string separated by newlines (`\n`), matching the original file structure.
 
 ### Step 9: Write the Updated Data to the File

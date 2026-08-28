@@ -7,12 +7,11 @@ The organization uses an **allow list** containing IP addresses permitted to acc
 
 The Python algorithm reads the allow list, removes specified IP addresses, and updates the original file with the revised list.
 
----
 
 ## Objective
 The aim of the project is to automate the process of removing unauthorized or revoked IP addresses from an access-control allow list using Python file handling and string manipulation.
 
----
+
 
 ## How It Works
 1. Opens the allow list file.
@@ -24,14 +23,14 @@ The aim of the project is to automate the process of removing unauthorized or re
 7. Converts the updated list back into a string.
 8. Writes the updated list back to the allow list file.
 
----
+
 
 ## Technologies Used
 - **Language:** Python
 - **IDE:** Visual Studio Code
 - **Version Control:** Git & GitHub
 
----
+
 
 ## Python Concepts Demonstrated
 - Variables & Data Types
@@ -40,7 +39,7 @@ The aim of the project is to automate the process of removing unauthorized or re
 - Iteration (`for` loops)
 - Conditional statements (`if` checks)
 
----
+
 
 ## Cybersecurity Relevance
 This project demonstrates **basic security automation** and **access control** concepts. An allow list represents a security policy describing who or what is permitted to access a protected resource.
@@ -52,13 +51,13 @@ In enterprise environments, similar automation logic applies to:
 - Cloud security groups
 - Incident response playbooks
 
----
+
 
 ## Project Files
 - `update_allow_list.py`: This is the Python script that updates the access list.
 - `allow_list.txt`: This is the text file containing authorized IP addresses.
 
----
+
 
 ## Implementation Steps
 ### Step 1: Create the Allow List
@@ -119,7 +118,7 @@ The `.join()` method combines the elements in a list into a single string separa
 
 The `"w"` write mode overwrites `allow_list.txt` with the cleaned string using `.write()`.
 
----
+
 
 ## Complete Python Script
 
@@ -148,7 +147,7 @@ with open(import_file, "w") as file:
     file.write(ip_addresses)
 ```
 
----
+
 
 ## Testing & Output Verification
 
@@ -164,7 +163,7 @@ Run the script from the VS Code Terminal:
 ```
 **Result:** The two target IP addresses (`192.168.1.15` and `192.168.1.25`) were successfully removed, leaving only the three authorized addresses intact.
 
----
+
 
 ## Key Takeaways
 In this project, I was able to do the following:
@@ -173,6 +172,3 @@ In this project, I was able to do the following:
 - **Data Parsing & Formatting:** I used `.split()` to turn the text into a list for easy editing, and `"\n".join()` to put it back into clean lines before saving.
 - **Error Prevention:** I added an `if` check (`if element in ...`) to make sure an IP address exists before trying to remove it, preventing program crashes.
 - **Efficient Code:** I kept file reading and writing to single steps at the start and end, avoiding unnecessary file operations inside the loop.
-
----
-

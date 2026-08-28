@@ -1,5 +1,4 @@
 # Update a File Through a Python Algorithm
-
 ---
 
 ## Project Overview

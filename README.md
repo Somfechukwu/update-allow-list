@@ -86,7 +86,8 @@ with open(import_file, "r") as file:
 The `open()` function with `"r"` mode opens the file for reading. The `with` statement acts as a context manager, automatically closing the file when execution exits the block. The `.read()` method imports the file contents as a single string.
 
 ### Step 5: Convert the String to a List
-`ip_addresses = ip_addresses.split()`  
+`ip_addresses = ip_addresses.split()`
+
 The `split()` method splits the string at whitespace (including newlines) to individual elements:
 `["192.168.1.10", "192.168.1.15", "192.168.1.20", "192.168.1.25", "192.168.1.30"]`
 

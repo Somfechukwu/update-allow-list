@@ -129,14 +129,14 @@ for element in remove_list:
         ip_addresses.remove(element)
 
 # 4. Convert list back to formatted string and overwrite file
-ip_addresses = "\n".join(ip_addresses)
+`ip_addresses = "\n".join(ip_addresses)
 
 with open(import_file, "w") as file:
-    file.write(ip_addresses)
+    file.write(ip_addresses)`
 
 ### Testing & Output Verification
 ## Execution
-Run the script from the VS Code Terminal
+Run the script from the VS Code Terminal:
 `python update_allow_list.py`
 
 ## Output (`allow_list.txt`)
@@ -151,6 +151,6 @@ Run the script from the VS Code Terminal
 In this project, I was able to do the following:
 - **Security Automation:** I demonstrated how scripting enforces the Principle of Least Privilege through rapid, repeatable access list maintenance.
 - **Safe File Handling:** Used with `open()` to ensure the file closes automatically and safely after reading or writing.
-- **Data Parsing & Formatting:** I used `.split()` to turn the text into a list for easy editing, and "\n".join() to put it back into clean lines before saving.
-- **Error Prevention: I added an `if` check (`if element in ...`) to make sure an IP address exists before trying to remove it, preventing program crashes.
+- **Data Parsing & Formatting:** I used `.split()` to turn the text into a list for easy editing, and `"\n".join()` to put it back into clean lines before saving.
+- **Error Prevention:** I added an `if` check (`if element in ...`) to make sure an IP address exists before trying to remove it, preventing program crashes.
 **Efficient Code:** I kept file reading and writing to single steps at the start and end, avoiding unnecessary file operations inside the loop.

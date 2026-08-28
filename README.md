@@ -1,6 +1,5 @@
 # Update a File Through a Python Algorithm
-
----
+--
 ## Project Overview
 This project demonstrates how Python can be used to automate an access-control task. It is one of the portfolio projects that I did in the **Google Cybersecurity Certificate Certification Course** (*Automate Cybersecurity Tasks with Python*).
 

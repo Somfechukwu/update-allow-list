@@ -83,6 +83,7 @@ Assigned the target file name to the `import_file` variable for easy reuse.
 with open(import_file, "r") as file:
     ip_addresses = file.read()
 ```
+
 The `open()` function with `"r"` mode opens the file for reading. The `with` statement acts as a context manager, automatically closing the file when execution exits the block. The `.read()` method imports the file contents as a single string.
 
 ### Step 5: Convert the String to a List

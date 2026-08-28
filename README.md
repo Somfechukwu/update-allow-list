@@ -120,9 +120,9 @@ The `.join()` method combines the elements in a list into a single string separa
 
 The `"w"` write mode overwrites `allow_list.txt` with the cleaned string using `.write()`.
 
----
+-
 
-### Complete Python Script
+## Complete Python Script
 
 # Define the target file
 `import_file = "allow_list.txt"`

@@ -7,7 +7,6 @@ The organization uses an **allow list** containing IP addresses permitted to acc
 
 The Python algorithm reads the allow list, removes specified IP addresses, and updates the original file with the revised list.
 
-
 ## Objective
 The aim of the project is to automate the process of removing unauthorized or revoked IP addresses from an access-control allow list using Python file handling and string manipulation.
 
@@ -97,9 +96,9 @@ This code defines the list of revoked IP addresses that need to be removed from 
 
 ### Step 7: Iterate and Remove Targeted IPs
 ```text
-`for element in remove_list:
+for element in remove_list:
     if element in ip_addresses:
-        ip_addresses.remove(element)`
+        ip_addresses.remove(element)
 ```
 - A `for` loop iterates through each address in `remove_list`.
 - The `if element in ip_addresses` check prevents runtime errors (`ValueError`) in case an IP is already absent.
@@ -112,8 +111,8 @@ The `.join()` method combines the elements in a list into a single string separa
 
 ### Step 9: Write the Updated Data to the File
 ```text
-`with open(import_file, "w") as file:`
-    `file.write(ip_addresses)`
+with open(import_file, "w") as file:
+    file.write(ip_addresses)
 ```
 
 The `"w"` write mode overwrites `allow_list.txt` with the cleaned string using `.write()`.
@@ -127,8 +126,8 @@ The `"w"` write mode overwrites `allow_list.txt` with the cleaned string using `
 
 ### 1. Read allow list contents
 ```text
-with open(import_file, "r") as file:`
-    `ip_addresses = file.read()
+with open(import_file, "r") as file:
+    ip_addresses = file.read()
 ```
 ### 2. Convert raw string into a list of IPs
 `ip_addresses = ip_addresses.split()`
@@ -147,8 +146,6 @@ with open(import_file, "w") as file:
     file.write(ip_addresses)
 ```
 
-
-
 ## Testing & Output Verification
 
 ### Execution
@@ -162,7 +159,6 @@ Run the script from the VS Code Terminal:
 192.168.1.30
 ```
 **Result:** The two target IP addresses (`192.168.1.15` and `192.168.1.25`) were successfully removed, leaving only the three authorized addresses intact.
-
 
 
 ## Key Takeaways

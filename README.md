@@ -109,6 +109,7 @@ This code defines the list of revoked IP addresses that need to be removed from 
 
 ### Step 8: Convert the List back into a String
 `ip_addresses = "\n".join(ip_addresses)`
+
 The `.join()` method combines the elements in a list into a single string separated by newlines (`\n`), matching the original file structure.
 
 ### Step 9: Write the Updated Data to the File
@@ -116,6 +117,7 @@ The `.join()` method combines the elements in a list into a single string separa
 `with open(import_file, "w") as file:`
     `file.write(ip_addresses)`
 ```
+
 The `"w"` write mode overwrites `allow_list.txt` with the cleaned string using `.write()`.
 
 ### Complete Python Script
@@ -146,9 +148,8 @@ The `"w"` write mode overwrites `allow_list.txt` with the cleaned string using `
 ### Testing & Output Verification
 ## Execution
 Run the script from the VS Code Terminal:
-```text
 `python update_allow_list.py`
-```
+
 ## Output (`allow_list.txt`)
 ```text
 192.168.1.10
